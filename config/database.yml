@@ -24,3 +24,5 @@ production:
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   url: <%= ENV['DATABASE_URL'] %>
+  database: api_bolivar_production
+  username: api_bolivar
