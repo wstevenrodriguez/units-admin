@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: units
+#
+#  id         :integer          not null, primary key
+#  project    :string
+#  stage      :string
+#  tower      :string
+#  number     :string
+#  status     :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  project: MyString
+  stage: MyString
+  tower: MyString
+  number: MyString
+  status: 1
+
+two:
+  project: MyString
+  stage: MyString
+  tower: MyString
+  number: MyString
+  status: 1
