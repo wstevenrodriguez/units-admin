@@ -4,3 +4,4 @@ Unit.create!(project: "proyecto1", stage: "Etapa 1", tower: "T3", number: "301",
 Unit.create!(project: "proyecto1", stage: "Etapa 2", tower: "T4", number: "401", status: 1)
 Unit.create!(project: "proyecto1", stage: "Etapa 2", tower: "T5", number: "501", status: 1)
 Unit.create!(project: "proyecto1", stage: "Etapa 2", tower: "T6", number: "601", status: 1)
+User.create!(name: "Steven", username: "stevenrodriguez", email: "s.rodriguez@ekoomedia.co", password:"123456")
