@@ -1,18 +1,18 @@
 databases:
   - name: postgres
-    ipAllowList: []
+    databaseName: api_bolivar_production
+    user: api_bolivar
 
 services:
   - type: web
-    name: rails
+    name: api_bolivar
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: bundle exec rails s
+    startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: RAILS_MASTER_KEY
-        sync: false
       - key: DATABASE_URL
         fromDatabase:
           name: postgres
           property: connectionString
-    plan: free
+      - key: RAILS_MASTER_KEY
+        sync: false
