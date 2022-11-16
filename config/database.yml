@@ -26,3 +26,4 @@ production:
   url: <%= ENV['DATABASE_URL'] %>
   database: api_bolivar_production
   username: api_bolivar
+  password: <%= ENV['PASSWORD_DATABASE'] %>
